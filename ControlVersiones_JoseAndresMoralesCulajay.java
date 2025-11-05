@@ -14,24 +14,29 @@ public class ControlVersiones_JoseAndresMoralesCulajay {
             System.out.println("2. Calcular número mayor");
             System.out.println("3. Calcular área de un rectángulo");
             System.out.println("4. Salir");
-            System.out.println("Seleccione una de las siguientes opciones:");
+            System.out.print("Seleccione una de las siguientes opciones: ");
             opcion = sc.nextInt();
+
             if (opcion < 1 || opcion > 4) {
-    System.out.println("⚠️ Opción inválida, por favor ingrese un número entre 1 y 4.");
-    continue; 
-}
+                System.out.println("⚠️ Opción inválida, por favor ingrese un número entre 1 y 4.");
+                continue;
+            }
 
             switch (opcion) {
                 case 1 -> calcularPromedio();
                 case 2 -> numeroMayor();
                 case 3 -> areaRectangulo();
-                case 4 -> System.out.println("¡Gracias por usar el programa!");
-                               mostrarAutor();
-
+                case 4 -> {
+                    System.out.println("¡Gracias por usar el programa!");
+                    mostrarAutor();
+                }
                 default -> System.out.println("Opción inválida, intente nuevamente.");
             }
+
         } while (opcion != 4);
     }
+
+    // ---- MÉTODOS ----
 
     public static void calcularPromedio() {
         Scanner sc = new Scanner(System.in);
@@ -60,11 +65,12 @@ public class ControlVersiones_JoseAndresMoralesCulajay {
         System.out.print("Ingrese altura: ");
         double altura = sc.nextDouble();
         System.out.println("El área del rectángulo es: " + (base * altura));
+    }
+
     public static void mostrarAutor() {
-    System.out.println("\n--------------------------------------");
-    System.out.println("Proyecto creado por: José Andrés Morales Culajay");
-    System.out.println("Universidad Mariano Gálvez de Guatemala");
-    System.out.println("--------------------------------------");
-}
+        System.out.println("\n--------------------------------------");
+        System.out.println("Proyecto creado por: José Andrés Morales Culajay");
+        System.out.println("Universidad Mariano Gálvez de Guatemala");
+        System.out.println("--------------------------------------");
     }
 }
