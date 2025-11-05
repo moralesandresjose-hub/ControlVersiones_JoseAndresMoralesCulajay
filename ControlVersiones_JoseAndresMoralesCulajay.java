@@ -26,6 +26,8 @@ public class ControlVersiones_JoseAndresMoralesCulajay {
                 case 2 -> numeroMayor();
                 case 3 -> areaRectangulo();
                 case 4 -> System.out.println("¡Gracias por usar el programa!");
+                               mostrarAutor();
+
                 default -> System.out.println("Opción inválida, intente nuevamente.");
             }
         } while (opcion != 4);
@@ -58,5 +60,11 @@ public class ControlVersiones_JoseAndresMoralesCulajay {
         System.out.print("Ingrese altura: ");
         double altura = sc.nextDouble();
         System.out.println("El área del rectángulo es: " + (base * altura));
+    public static void mostrarAutor() {
+    System.out.println("\n--------------------------------------");
+    System.out.println("Proyecto creado por: José Andrés Morales Culajay");
+    System.out.println("Universidad Mariano Gálvez de Guatemala");
+    System.out.println("--------------------------------------");
+}
     }
 }
