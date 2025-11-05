@@ -16,6 +16,10 @@ public class ControlVersiones_JoseAndresMoralesCulajay {
             System.out.println("4. Salir");
             System.out.println("Seleccione una de las siguientes opciones:");
             opcion = sc.nextInt();
+            if (opcion < 1 || opcion > 4) {
+    System.out.println("⚠️ Opción inválida, por favor ingrese un número entre 1 y 4.");
+    continue; 
+}
 
             switch (opcion) {
                 case 1 -> calcularPromedio();
