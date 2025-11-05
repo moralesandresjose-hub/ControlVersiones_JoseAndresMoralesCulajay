@@ -9,12 +9,12 @@ public class ControlVersiones_JoseAndresMoralesCulajay {
         int opcion;
 
         do {
-            System.out.println("\n=== MENÚ PRINCIPAL ===");
+            System.out.println("\n=== MENÚ PRINCIPAL DEL PROGRAMA ===");
             System.out.println("1. Calcular promedio");
             System.out.println("2. Calcular número mayor");
             System.out.println("3. Calcular área de un rectángulo");
             System.out.println("4. Salir");
-            System.out.print("Seleccione una opción: ");
+            System.out.println("Seleccione una de las siguientes opciones:");
             opcion = sc.nextInt();
 
             switch (opcion) {
